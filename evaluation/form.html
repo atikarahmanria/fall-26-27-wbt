@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+</head>
+
+<body>
+
+    <form method="post">
+       <fieldset>
+         <h3>Donor Information</h3>
+            <table>
+                <tr>
+                    <td><label for="fname">First Name*</label></td>
+                    <td><input type="text" id="fname" name="fname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last Name*</label></td>
+                    <td><input type="text" id="lname" name="lname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="company">Company</label></td>
+                    <td><input type="text" id="company" name="company"></td>
+                </tr>
+                <tr>
+                    <td><label for="addr1">Address 1*</label></td>
+                    <td><input type="text" id="addr1" name="addr1" required></td>
+                </tr>
+                <tr>
+                    <td><label for="addr2">Address 2</label></td>
+                    <td><input type="text" id="addr2" name="addr2"></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City*</label></td>
+                    <td><input type="text" id="city" name="city" required></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State*</label></td>
+                    <td>
+                        <select id="state" name="state" required>
+                            <option value="">Select a State</option>
+                            <option>Alabama</option>
+                            <option>California</option>
+                            <option>Florida</option>
+                            <option>New York</option>
+                            <option>Texas</option>
+                            <option>Washington</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="zip">Zip Code*</label></td>
+                    <td><input type="text" id="zip" name="zip" required></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country*</label></td>
+                    <td>
+                        <select id="country" name="country" required>
+                            <option value="">Select a Country</option>
+                            <option>Bangladesh</option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone</label></td>
+                    <td><input type="text" id="phone" name="phone"></td>
+                </tr>
+                <tr>
+                    <td><label for="fax">Fax</label></td>
+                    <td><input type="text" id="fax" name="fax"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email*</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label>Donation Amount*<br>(Check a button or type in your amount)</label></td>
+                    <td>
+                        <input type="radio" name="amount" value="none" checked>None
+                        <input type="radio" name="amount" value="50">$50
+                        <input type="radio" name="amount" value="75">$75
+                        <input type="radio" name="amount" value="100">$100
+                        <input type="radio" name="amount" value="250">$250
+                        <input type="radio" name="amount" value="other">Other
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="other">Other Amount $</label></td>
+                    <td><input type="text" id="other" name="other"></td>
+                </tr>
+                <tr>
+                    <td><label>Recurring Donation<br>(Check if yes)</label></td>
+                    <td>
+                        <input type="checkbox" id="recurring" name="recurring" value="yes">I am interested in giving on a regular basis.
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="monthly">Monthly Credit Card $</label></td>
+                    <td>
+                        <input type="text" id="monthly" name="monthly">
+                        <label for="months">For</label>
+                        <input type="text" id="months" name="months">
+                        Months
+                    </td>
+                </tr>
+            </table>
+            <h3>Honorarium and Memorial Donation Information</h3>
+            <table>
+                <tr>
+                    <td><label>I would like to make this donation</label></td>
+                    <td>
+                        <input type="radio" name="honor" value="honor">To Honor<br>
+                        <input type="radio" name="honor" value="memory">In Memory of
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="hname">Name</label></td>
+                    <td><input type="text" id="hname" name="hname"></td>
+                </tr>
+                <tr>
+                    <td><label for="ack">Acknowledge Donation to</label></td>
+                    <td><input type="text" id="ack" name="ack"></td>
+                </tr>
+                <tr>
+                    <td><label for="haddr">Address</label></td>
+                    <td><input type="text" id="haddr" name="haddr"></td>
+                </tr>
+                <tr>
+                    <td><label for="hcity">City</label></td>
+                    <td><input type="text" id="hcity" name="hcity"></td>
+                </tr>
+                <tr>
+                    <td><label for="hstate">State</label></td>
+                    <td>
+                        <select id="hstate" name="hstate">
+                            <option value="">Select a State</option>
+                            <option>Alabama</option>
+                            <option>California</option>
+                            <option>Florida</option>
+                            <option>New York</option>
+                            <option>Texas</option>
+                            <option>Washington</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="hzip">Zip</label></td>
+                    <td><input type="text" id="hzip" name="hzip"></td>
+                </tr>
+            </table>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Continue">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
